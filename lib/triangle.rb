@@ -5,7 +5,8 @@ class Triangle
   def initialize(side1, side2, side3)
     if side1 <= 0 || side2 <= 0 || side3 <= 0
       raise TriangleError
-    elsif (self.side1 + self.side2) <= self.side3 || (self.side1 + self.side3) <= self.side2 || (self.side2 + self.side3) <= self.side1
+    end
+    if (self.side1 + self.side2) <= self.side3 || (self.side1 + self.side3) <= self.side2 || (self.side2 + self.side3) <= self.side1
     
       raise TriangleError
     end
